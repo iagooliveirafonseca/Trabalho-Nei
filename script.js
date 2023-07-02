@@ -9,8 +9,14 @@
 function loadBody(){
     hamburguer = document.getElementsByClassName("hamburguer")[0]
     hamburguer.addEventListener('click', clicou)
-    imagens = document.querySelectorAll('.imgs')
+    function clicou(){
+
+      menu = document.getElementsByClassName("menu")[0]
+      menu.classList.toggle("active")
     
+  }
+
+    imagens = document.querySelectorAll('.imgs')
     imagens.forEach( (imgs) =>{
         imgs.addEventListener('mouseover' , () =>{
           const link = imgs.querySelector('a')
@@ -37,13 +43,38 @@ function loadBody(){
       
 
 
-  function clicou(){
-
-      menu = document.getElementsByClassName("menu")[0]
-      menu.classList.toggle("active")
-    
-  }
+ 
 }
+
+
+// function verificar(){
+//   const nome = document.getElementById('name')
+//   const email = document.getElementById('email')
+//   const description = document.getElementById('message')
+//   console.log(description)
+
+//   if ( nome.value == ""){
+//     const error_name = "Por favor, escreva seu nome"
+//     nome.style.color = "Red"
+//     nome.style.paddingLeft = '10px'
+//     nome.value = error_name
+//   } 
+  
+//   if(email.value == ""){
+//     const error_email = "Por favor, escreva um e-mail seu de fácil acesso"
+//     email.style.color = "Red"
+//     email.style.paddingLeft = '10px'
+//     email.value = error_email
+//   } 
+
+//   if(description.value == ""){
+//     const error_message = "Por favor, para entendermos melhor suas dúvidas ou objetivo de contato, escreva nesse campo uma mensagem"
+//     description.style.color = "Red"
+//     description.style.paddingLeft = '10px'
+//     description.value = error_message
+//   }
+// }
+
 
 
 

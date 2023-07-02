@@ -241,9 +241,15 @@ li a:hover{
     cursor: pointer;
 }
 
+.logo-footer{
+    width: min(142rem, 100%);
+    margin: auto;
+}
+
 #footer .logo{
     width: 4rem;
-    margin-top: 20rem;
+    margin-top: 2.8rem;
+  
 }
 
 /*========================================RESPONSIVE========================================*/
@@ -271,6 +277,13 @@ li a:hover{
         width: 110rem;
       
     }
+
+    .logo-footer{
+        width: min(98rem, 100%);
+        margin: auto;
+    }
+    
+    
     
 }
 
@@ -322,6 +335,11 @@ li a:hover{
         height: 0.1rem;
         border: 0.1rem solid #6842e3;
     }
+
+    .logo-footer{
+        width: min(48rem, 100%);
+        margin: auto;
+    }
 }
 
 @media (Max-width:600px){
@@ -358,5 +376,10 @@ li a:hover{
         width: 28rem;
         height: 0.1rem;
         border: 0.1rem solid #6842e3;
+    }
+
+    .logo-footer{
+        width: min(35rem, 100%);
+        margin: auto;
     }
 }
