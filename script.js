@@ -21,6 +21,16 @@ function loadBody(){
           const link = imgs.querySelector('a')
           link.classList.remove('a-display')
         })
+
+        imgs.addEventListener('Touchstart' , () =>{
+          const link = imgs.querySelector('a')
+          link.classList.add('a-display')
+        })
+
+        imgs.addEventListener('Touchend' , () =>{
+          const link = imgs.querySelector('a')
+          link.classList.add('a-display')
+        })
         
       }
       )
