@@ -1,0 +1,1295 @@
+/*===================GLOBAL==================*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    color: white;
+    font-size:62.5%; /* 1rem = 10px */
+    --purple-color: #6842e3;
+
+    
+}
+
+body::-webkit-scrollbar-track{
+    background:transparent; 
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--purple-color);    /* color of the scroll thumb */}
+
+html,
+body{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./Assets/PLANO_DE_FUNDO_COMPUTADOR.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 120rem;
+ 
+}
+
+
+
+.wrapper{
+    width: min(144rem, 100%);
+    margin: auto;
+   
+}
+
+/*===============FONT
+font-family: 'Montserrat', sans-serif;
+================*/
+
+/*=======================NAVIGATION=======================*/
+
+#navigation .wrapper{
+    width: 100%;
+    background-color: #000000;
+    margin: auto;
+    margin-bottom: 15rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#navigation .wrapper .navbar{
+    width: min(160rem, 100%);
+    margin: 0 auto;
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+
+}
+
+.hamburguer{
+    width: 3rem;
+    height: 3rem;
+
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 0;
+
+    position: relative;
+    cursor: pointer;
+    display: none;
+  
+}
+.hamburguer:after{
+    content:"";
+
+    position: absolute;
+    top: 35%;
+    left: 15%;
+
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+
+    background-color: #fff;
+}
+
+.hamburguer::before{
+    content:"";
+
+    position: absolute;
+    top: 55%;
+    left: 15%;
+
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+
+    background-color: #fff;
+
+}
+
+#navigation img{
+    width: 4rem;
+}
+
+.menu{
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    font-size: 2rem;
+    
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    color: white; 
+   padding: 0.5rem 1rem;
+}
+
+li a:hover{
+    color: var(--purple-color);
+    transition: 0.5s ease;
+}
+
+
+
+/*=======================APRESENTATION=======================*/
+#apresentation{
+    padding-top: 20rem;
+    margin-bottom: 40rem;
+  
+  
+}
+
+#apresentation .wrapper{
+    display: flex;
+    position: relative;
+}
+
+#apresentation .wrapper div{
+    display: block;
+    width: min(56rem, 100%);
+   
+   
+
+}
+
+#apresentation div h6{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#apresentation div h1{
+    font-size: 3.7rem;
+    font-weight: 400;
+}
+
+
+/*=======================PORTFOLIO=======================*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+#portfolio .wrapper{
+    width: min(155rem, 100%);
+}
+
+.wrapper .square{
+    display: grid;
+    grid-template-areas:
+    'img-0 img-1 img-2'
+    'img-3 img-4 img-5';
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.square div{
+    position: relative;
+    width: min(70rem, 100%);
+    height: 30rem;
+}
+
+.above-the-imgs{
+    width: min(70rem, 100%);
+    height: 30rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;    
+}
+
+.square div:hover{
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+
+.square a{
+    visibility: hidden;
+    width: 100%;
+    text-decoration: none;
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+}
+
+.square .a-display{
+    visibility: visible;
+    
+}
+
+#img-00{
+    background-image: url('./Assets/Prancheta\ 20.png');
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+#img-01{
+    background-image: url('./Assets/Prancheta\ 13.png');
+    background-position: center;
+    background-size: cover;
+}
+#img-02{
+    background-image: url('./Assets/Prancheta\ 12.png');
+    background-position: center;
+    background-size: cover;
+}
+#img-03{
+    background-image: url('./Assets/Prancheta\ 8.png');
+    background-position: center;
+    background-size: cover;
+}
+#img-04{
+    background-image: url('./Assets/Prancheta\ 7.png');
+    background-position: center;
+    background-size: cover;
+}
+#img-05{
+    background-image: url('./Assets/Prancheta\ 8.png\ Daisy.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#more-jobs{
+    padding-top: 1rem;
+    margin-top: 2rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: 27rem;
+    height: 5rem;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/*=======================SERVICES=======================*/
+#services{
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+}
+
+#services .line{
+    display: flex;
+    align-items: center;
+
+}
+
+#services .line div{
+    width: 33rem;
+}
+
+#services hr{
+width: 144rem;
+height: 0.1rem;
+border: 0.1rem solid #6842e3;
+}
+
+#services .wrapper p{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+}
+
+#services .wrapper h2{
+    font-size: 3.2rem;
+}
+
+#services .wrapper button{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.9rem;
+    margin-top: 1.5rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: 35rem;
+    height: 7rem;
+    border-radius: 20px;
+    font-size: 2.3rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.services-buttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/*=======================BRAND-BUILDING=======================*/
+#brand-building{
+    margin-bottom: 10rem;
+}
+
+#brand-building .line{
+    display: flex;
+    align-items: center;
+
+}
+#brand-building .line div{
+    width: 52rem;
+}
+
+#brand-building .line-p{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+}
+#brand-building .line h2{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+#brand-building hr{
+width: 144rem;
+height: 0.1rem;
+border: 0.1rem solid #6842e3;
+}
+
+#brand-building .brand-building-texts{  
+    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+    'A B C'
+    ;
+    gap: 50px;
+}
+#brand-building .brand-building-texts h3{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+    margin-bottom: 1rem;
+}
+
+#brand-building .brand-building-texts p{
+font-size: 1.7rem;
+}
+
+#brand-building .brand-building-texts div{
+    width: min(46rem,100%);
+    line-height: 3.3rem;
+    height: 20rem;
+}
+
+
+/*=======================ViSUAL-IDENTITY=======================*/
+
+#visual-identity .line{
+    display: flex;
+    align-items: center;
+
+}
+
+#visual-identity .line div{
+    width: 38rem;
+}
+
+#visual-identity .line-p{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+}
+
+#visual-identity .line h2{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+#visual-identity hr{
+    width: 144rem;
+    height: 0.1rem;
+    border: 0.1rem solid #6842e3;
+}
+
+#visual-identity .visual-identity-texts{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+#visual-identity .visual-identity-texts div{
+    width: min(34rem,100%);
+    line-height: 3.3rem;
+    
+}
+
+#visual-identity .visual-identity-texts p{
+    font-size: 1.7rem;
+}
+
+#visual-identity .visual-identity-texts h3{
+    font-size: 2rem;
+    color: var(--purple-color);
+    margin-bottom: 0.5rem;
+}
+
+/*=======================PURPLE-RETANGLE(SPAN)=======================*/
+
+
+.purple-rectangle{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--purple-color);
+}
+
+/*=======================FEEDBACK=======================*/
+#feedback{
+    margin-bottom: 20rem;
+}
+
+#feedback .line{
+    display: flex;
+    align-items: center;
+
+}
+
+#feedback .line div{
+    width: 30rem;
+}
+
+#feedback .line-p{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+}
+
+#feedback .line h2{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+#feedback hr{
+    width: 144rem;
+    height: 0.1rem;
+    border: 0.1rem solid #6842e3;
+}
+
+#feedback .text-feedback-box{
+margin-top: 10rem;
+background-color:  var(--purple-color);
+padding: 5rem 5rem 5rem 5rem;
+
+}
+
+#feedback .text-feedback-box .text-feedback{
+    width: min(140rem, 100%);
+    margin: auto;
+    display: none;
+    
+}
+
+#feedback .text-feedback-box .text-feedback.active{
+    display: block;
+}
+
+#feedback .text-feedback-box .text-feedback p{
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+}
+
+#feedback .text-feedback-box .text-feedback h6{
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: black;
+}
+
+#feedback .change-feedback{
+    margin-top: 5rem;
+    width: min(140rem, 100%);
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+#feedback .change-feedback .circles{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50rem;
+    border: solid 1px black;
+}
+
+.circles.active{
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+
+
+/*=======================PROPOSAL=======================*/
+#proposal{
+    background-color: var(--purple-color);
+    padding-block: 2rem;
+}
+
+#proposal .wrapper{ 
+    width: min(140,100%);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#proposal .proposal-text{
+    width: min(75rem,100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+}
+
+#proposal .proposal-text h2{
+    font-size: 4rem;
+    color: #000000;
+
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+#proposal .proposal-text p{
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    margin-bottom: 2rem;
+}
+
+#proposal .request-a-proposal-button{
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: 50rem;
+    height: 6rem;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#proposal .proposal-smarphone-img{
+    width: min(35rem,100%);
+}
+
+#proposal img{
+    position: absolute;
+    width: 35rem;
+    margin-top: -15rem;
+}
+
+/*=======================FOOTER=======================*/
+
+#footer{
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+}
+
+#footer .line{
+    display: flex;
+    align-items: center;
+
+}
+
+#footer .line div{
+    width: 16rem;
+}
+
+#footer .line-p{
+    font-size: 2.2rem;
+    color: var(--purple-color);
+}
+
+#footer .line h2{
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+#footer hr{
+    width: 144rem;
+    height: 0.1rem;
+    border: 0.1rem solid #6842e3;
+}
+
+#footer .text-area{
+    margin-top: 10rem;
+    width: min(144rem,100%);
+
+}
+
+#footer .text-area h2{
+    padding-left: 1rem;
+}
+
+.box-area-text{
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: start;
+
+}
+
+
+#footer .box-area-text #name{
+    width: 100%;
+    height: 5rem;
+}
+
+#footer .box-area-text #email{
+    width: 100%;
+    height: 5rem;
+}
+
+#footer .box-area-text #message {
+    width: 100%;
+    height: 30rem;
+    resize: none;
+}
+
+#footer #button-send{
+    margin-top: 2rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: 15rem;
+    height: 5rem;
+    border-radius: 2px;
+    color: var(--purple-color);
+    font-size: 2.8rem;
+    font-weight: 400;
+    float: right;
+    cursor: pointer;
+}
+
+#footer .logo{
+    width: 4rem;
+    margin-top: 20rem;
+}
+
+/*=======================INIT-HIDEN=======================*/
+.init-hiden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.init-hiden-off{
+    opacity: 1;
+}
+
+@media (max-width:1230px){
+/*=======================BODY(BACKGROUND-IMG)=======================*/
+
+    html,
+    body{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./Assets/PLANO_DE_FUNDO_COMPUTADOR.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 80rem;
+
+}
+
+/*=======================WRAPPER=======================*/
+
+.wrapper{
+    width: min(100rem,100%);
+    padding-inline:2rem;
+  
+}
+
+/*=======================PORTFOLIO=======================*/
+
+.wrapper .square{
+    width: min(70rem,100%);
+    display: grid;
+    grid-template-areas:
+    'img-0'
+    'img-1' 
+    'img-2'
+    'img-3'
+    'img-4' 
+    'img-5';
+    margin-top: 2rem;
+    gap: 2rem;
+    margin: auto;
+}
+
+.square div{
+    width: min(70rem, 100%);
+    height: 30rem;
+    background-color: white;
+}
+
+/*=======================SERVICES=======================*/
+.services-buttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .wrapper a{
+    padding-top: 1.9rem;
+    margin-top: 1.5rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: 30rem;
+    height: 7rem;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.services-buttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services{
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+}
+
+
+/*=======================BRAND-BUILDING=======================*/
+
+#brand-building{
+    margin-bottom: 10rem;
+}
+
+
+#brand-building .brand-building-texts{  
+    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+    'A';
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+
+   
+ 
+}
+
+#brand-building .brand-building-texts div{
+    width: min(70rem,100%);
+    line-height: 3rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+
+/*=======================VISUAL-IDENTIFY=======================*/
+#visual-identity .visual-identity-texts{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+    'A A';
+    justify-items: center;
+    gap: 2rem;
+}
+
+#visual-identity .visual-identity-texts div{
+    width: min(50rem,100%);
+    line-height: 3rem;
+    
+}
+
+
+/*=======================PROPOSAL=======================*/
+#proposal .wrapper{ 
+    width: min(110,100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#proposal{
+    background-color: var(--purple-color);
+    padding-block: 2rem;
+    height: 80rem;
+}
+
+
+#proposal img{
+    position: absolute;
+    width: 35rem;
+    margin-top: -1rem;
+}
+
+
+
+/*=================LINES-STYLES=======================*/
+
+/*=================SERVICES=======================*/
+#services hr{
+width: 106rem;
+
+}
+
+#services .wrapper p{
+    font-size: 2rem;
+    color: var(--purple-color);
+}
+
+#services .wrapper h2{
+    font-size: 2.8rem;
+}
+
+/*=======================BRAND-BUILDING=======================*/
+#brand-building .line-p{
+font-size: 2rem;
+
+}
+#brand-building .line h2{
+font-size: 2.8rem;
+
+}
+
+#brand-building hr{
+width: 103rem;
+}
+
+/*=======================VISUAL=======================*/
+#visual-identity .visual-identity-texts{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-areas: 
+    'A';
+    justify-items: center;
+    gap: 2rem;
+}
+
+#visual-identity .line p{
+    font-size: 2rem;
+   
+}
+
+#visual-identity .line h2{
+    font-size: 2.8rem;
+}
+
+#visual-identity hr{
+    width: 108rem;
+    height: 0.1rem;
+    border: 0.1rem solid #6842e3;
+}
+
+/*=======================FEEDBACK=======================*/
+
+
+
+#feedback .line-p{
+    font-size: 2rem;
+}
+
+
+#feedback .line h2{
+    font-size: 2.8rem;
+}
+
+#feedback hr{
+    width: 110rem;
+    height: 0.1rem;
+    border: 0.1rem solid #6842e3;
+}
+
+#feedback .text-feedback-box .text-feedback p{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+    
+/*=======================FOOTER=======================*/
+#footer .line-p{
+    font-size: 2rem;
+  
+}
+
+#footer .line h2{
+    font-size: 2.8rem;
+}
+
+#footer hr{
+    width: 110rem;
+  
+}
+
+#footer{
+    margin-top: 30rem;
+}
+
+}
+
+@media (max-width:900px){
+.wrapper{
+        width: min(50rem,100%);
+}
+
+/*=======================MENU-MOBILE=======================*/
+    .hamburguer{
+        display: block;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        height: 100vh;
+        background-color: #222;
+        margin: 0;
+
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 25rem;
+
+        padding: 10rem 2rem;
+
+        transition: 0.5s ease;
+        visibility: hidden;
+        
+    }
+
+    .menu.active{
+        visibility: initial;
+        right: 0;
+
+    }
+
+  
+/*=======================SERVICES=======================*/
+.services-buttons{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#services{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+/*=======================PROPOSAL=======================*/
+#proposal .request-a-proposal-button{
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: black;
+    border: 2px solid var(--purple-color);
+    width: min(40rem, 100%);
+    height: 6rem;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+    /*=================LINES-STYLES=======================*/
+
+    /*=================SERVICES=======================*/
+    #services hr{
+    width: 35rem;
+    
+    }
+    
+ 
+  
+    
+    /*=======================BRAND-BUILDING=======================*/
+    
+    #brand-building hr{
+    width: 25rem;
+    }
+    
+    /*=======================VISUAL=======================*/
+    
+    #visual-identity hr{
+        width: 35rem;
+        
+    }
+    
+    /*=======================FEEDBACK=======================*/
+    
+    #feedback hr{
+        width: 40rem;
+        
+    }
+
+
+    /*=======================FOOTER=======================*/
+
+    #footer hr{
+        width: 45rem;
+        height: 0.1rem;
+        border: 0.1rem solid #6842e3;
+    }
+
+}
+
+@media (max-width:600px){
+/*=======================BODY (BACKGROUND-IMG)=======================*/
+
+    html,
+    body{
+    width: 100%;
+    height: 150vh;
+    background-image: url('./Assets/PLANO_DE_FUNDO_COMPUTADOR.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 60rem;
+
+}
+
+/*=======================WRAPPER=======================*/
+    #navigation .wrapper{
+        padding: 0;
+    }
+
+
+    .wrapper{
+        width: min(37rem,100%);
+      
+    }
+
+
+    /*=======================WRAPPER=======================*/
+
+    .hamburguer{
+        margin-right: 2rem;
+    }
+    #navigation .wrapper {
+        width: 100%;
+    }
+
+    #navigation .wrapper .navbar{
+       
+        margin: 0 auto;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+    
+    }
+
+
+
+/*=======================APRESENTATION (BACKGROUND-IMG)=======================*/
+#apresentation{
+    margin-bottom:60rem;  
+}
+
+#apresentation div h6{
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#apresentation div h1{
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+
+/*=======================BRAND-BUILDING=======================*/
+
+   /*=================PROPOSAL=======================*/
+   #proposal{
+    padding-top: 10rem;
+    margin-bottom: 40rem;
+    
+    }
+  
+    #proposal img{
+        position: absolute;
+        width: 35rem;
+        margin-top: 3rem;
+    } 
+
+    #proposal .request-a-proposal-button{
+        display: block;
+        padding: 1rem 1rem;
+        height: 7rem;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+
+  
+    #proposal img{
+        position: absolute;
+        width: 30rem;
+        margin-top: 10rem;
+    } 
+   
+/*=================LINES-STYLES=======================*/
+
+/*=================SERVICES=======================*/
+    #services hr{
+    width: 15rem;
+ 
+    }
+    
+    #services .wrapper p{
+        font-size: 2rem;
+        color: var(--purple-color);
+    }
+    
+    #services .wrapper h2{
+        font-size: 2.6rem;
+    }
+
+/*=======================VISUAL=======================*/
+    #brand-building .line-p{
+    font-size: 2rem;
+  
+    }
+    #brand-building .line h2{
+    font-size: 2.6rem;
+   
+    }
+
+    #brand-building hr{
+    width: 2rem;
+    }
+
+
+
+/*=======================VISUAL=======================*/
+    #visual-identity .visual-identity-texts{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-areas: 
+        'A';
+        justify-items: center;
+        gap: 2rem;
+    }
+
+    #visual-identity .line p{
+        font-size: 2rem;
+       
+    }
+
+    #visual-identity .line h2{
+        font-size: 2.6rem;
+    }
+    
+    #visual-identity hr{
+        width: 12rem;
+        height: 0.1rem;
+        border: 0.1rem solid #6842e3;
+    }
+
+
+
+/*=======================FEEDBACK=======================*/
+
+    #feedback .text-feedback-box .text-feedback p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #feedback .line-p{
+        font-size: 2rem;
+    }
+    
+    
+    #feedback .line h2{
+        font-size: 2.6rem;
+    }
+    
+    #feedback hr{
+        width: 18rem;
+        height: 0.1rem;
+        border: 0.1rem solid #6842e3;
+    }
+
+    /*=======================FOOTER=======================*/
+    #footer .line h2{
+        font-size: 2.6rem;
+    }
+
+    #footer hr{
+        width: 28rem;
+        height: 0.1rem;
+        border: 0.1rem solid #6842e3;
+    }
+    
+}
+
+@media (max-width:415px){
+    /*=======================BODY (BACKGROUND-IMG)=======================*/
+    
+        html,
+        body{
+        width: 100%;
+        height: 140vh;
+        background-image: url('./Assets/PLANO_DE_FUNDO_COMPUTADOR.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 53rem;
+    
+    }
+    /*=======================APRESENTATION=======================*/
+
+    #apresentation{
+        margin-bottom:50rem;  
+    }
+    /*=======================PROPOSAL=======================*/
+
+}
+
+@media (max-width:380px){
+    /*=======================BODY(BACKGROUND IMG)=======================*/
+
+    html,
+    body{
+    height: 125vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 50rem;
+
+}
+    /*=======a================PROPOSAL=======================*/
+
+ 
+
+  
+}
+
+
+

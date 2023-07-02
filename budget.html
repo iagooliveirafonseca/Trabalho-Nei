@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/style.buget.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="loadBody()">
+
+
+
+  <nav id="navigation">
+    <div class="wrapper">
+      <div class="navbar">
+        <div><a href="/index.html"><img class="logo" src="./Assets/LOGO_DIGITECH.png" alt=""></a></div>
+        <div class="hamburguer"></div>
+        <ul class="menu">
+          <li><a href="./index.html">Identidade Visual</a></li>
+          <li><a href="./portifolio.html">Portfolio</a></li>
+          <li><a href="./index.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <footer id="footer">
+    <div class="wrapper">
+      <p class="line-p">Formulário para</p>
+      <div class="line">
+        <div>
+          <h2>Proposta comercial</h2>
+        </div>
+      </div>
+      </form>
+      <div class="text-area">
+        <form action="https://formsubmit.co/iagofranco2000@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you-message.html">
+          <input type="hidden" name="_autoresponse"
+            value="Recebemos sua mensagem, agradeçemos o contato e em breve retornaremos!">
+
+          <h2>1. Endereço de E-mail</h2>
+          <div class="box-area-text">
+            <input class="input-message" id="email" type="email" name="e-mail" required>
+          </div>
+
+          <h2>2. Seu nome completo</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="name" type="text" name="Nome Completo" required>
+          </div>
+
+
+          <h2>3. Seu WhatsApp com DDD (opcional)</h2>
+          <div class="box-area-text">
+            <input class="input-message" id="number_whats" type="number" name="Numero do celular">
+          </div>
+
+          <h2>4. Nome da Empresa</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="name_company" type="text" name="Nome da empresa">
+          </div>
+
+          <h2>5. Cidade</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="name_city" type="text" name="Cidade">
+          </div>
+
+          <h2>6. Estado</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="name_country" type="text" name="Estado">
+          </div>
+
+          <h2>7. Site da sua empresa (se houver)</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="your_company_website" type="text" name="Site da empresa">
+          </div>
+
+          <h2>8. Instagram da sua empresa (se houver)</h2>
+          <div class="box-area-text ">
+            <input class="input-message" id="your_company_Instagram" type="text" name="Instagram da empresa">
+          </div>
+
+          <h2>9. Como me encontrou?</h2>
+          <div class="check-box">
+            <div>
+              <input type="radio" name="encontrou pelo / por" value="google" class="input-radio" id="google_form">
+              <label for="google_form">Google</label>
+            </div>
+            <div>
+              <input type="radio" name="encontrou pelo / por" value="Instagram" class="input-radio" id="instagram_form">
+              <label for="instagram_form">Instagram</label>
+            </div>
+            <div>
+              <input type="radio" name="encontrou pelo / por" value="Indicacao" class="input-radio" id="indicacao_form">
+              <label for="indicacao_form">Indicação</label>
+            </div>
+            <div>
+              <input type="radio" name="encontrou pelo / por" value="Outro" class="input-radio" id="other_form">
+              <label for="other_form">Outro</label>
+            </div>
+          </div>
+
+          <h2> 10. Por que você precisa deste projeto? Quais são seus objetivos?
+          </h2>
+          <div class="box-area-text ">
+            <textarea class="input-text-area" id="message" placeholder="Escreva sua mensagem" name="Seu objetivo"
+              required> </textarea>
+          </div>
+
+
+
+          <h2> 11. Qual seu tipo de negócio?</h2>
+          <div class="check-box">
+            <div>
+              <input type="radio" name="tipo de serviço" value="company" class="input-radio" id="company">
+              <label for="company">Serviços / Empresa</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Bares e Restaurante" class="input-radio" id="bar_and_restaurant">
+              <label for="bar_and_restaurant">Bares e Restaurante</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Linha de Produtos" class="input-radio"  id="Product_line">
+              <label for="Product_line">Linha de Produtos</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Roupas e Acessórios" class="input-radio"  id="Clothing_and_accessories">
+              <label for="Clothing_and_accessories">Roupas e Acessórios</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Eletro / Eletrônicos" class="input-radio"  id="electro_and_electronics">
+              <label for="electro_and_electronics">Eletro / Eletrônicos</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Fotografia" class="input-radio"  id="photography">
+              <label for="photography">Fotografia</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo de serviço" value="Outro tipo de negócio" class="input-radio"  id="another_business">
+              <label for="another_business">Outro</label>
+            </div>
+          </div>
+
+          <h2> 12. Porte da Empresa</h2>
+          <div class="check-box">
+            <div>
+              <input type="radio" name="company" value="Profissional Liberal" class="input-radio"  id="Liberal_Professional">
+              <label for="Liberal_Professional">Profissional Liberal</label>
+            </div>
+            <div>
+              <input type="radio" name="company" value="Micro (2-10 Funcionários)" class="input-radio" id="micro_company">
+              <label for="micro_company">Micro (2-10 Funcionários)</label>
+            </div>
+            <div> 
+              <input type="radio" name="company" value="Pequena (10-50 Funcionários)" class="input-radio"  id="small_company">
+              <label for="small_company">Pequena (10-50 Funcionários)</label>
+            </div>
+            <div>
+              <input type="radio" name="company" value="Média (50-100 Funcionários)" class="input-radio"  id="average_company">
+              <label for="average_company">Média (50-100 Funcionários)</label>
+            </div>
+            <div>
+              <input type="radio" name="company" value="Grande (Mais de 100 Funcionários)" class="input-radio"  id="big_company">
+              <label for="big_company">Grande (Mais de 100 Funcionários)</label>
+            </div>
+          </div>
+
+          <h2> 13. Identidade Visual - Além do Logotipo, marque abaixo os itens para seu projeto:</h2>
+          <div class="check-box">
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Banner / Capa para Facebook" class="input-radio"  id="banner_visual_identity">
+              <label for="banner_visual_identity">Banner / Capa para Facebook</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Cartão de Visitas" class="input-radio"  id="business_card_visual_identity">
+              <label for="business_card_visual_identity">Cartão de Visitas</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Cartão de Visitas Digital" class="input-radio"  id="digital_business_card">
+              <label for="digital_business_card">Cartão de Visitas Digital</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Assinatura de E-Mail" class="input-radio"  id="e_mail_signature">
+              <label for="e_mail_signature">Assinatura de E-Mail</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Adesivo" class="input-radio"  id="sticker">
+              <label for="sticker">Adesivo</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Crachá" class="input-radio"  id="badge">
+              <label for="badge">Crachá</label>
+            </div>
+
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Papel Timbrado" class="input-radio"  id="letterhead">
+              <label for="letterhead">Papel Timbrado</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Pasta A4" class="input-radio"  id="a4_folder">
+              <label for="a4_folder">Pasta A4</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Carimbo" class="input-radio"  id="stamp">
+              <label for="stamp">Carimbo</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Template de Post Para Instagram" class="input-radio"  id="post_template_for_instagram">
+              <label for="post_template_for_instagram">Template de Post Para Instagram</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Brindes (Ex: Lápis/Caneca/Chaveiro)" class="input-radio"  id="gifts">
+              <label for="gifts">Brindes (Ex: Lápis/Caneca/Chaveiro)</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Uniforme / Avental" class="input-radio"  id="uniform_and_apron">
+              <label for="uniform_and_apron">Uniforme / Avental</label>
+            </div>
+            <div>
+              <input type="radio" name="Itens de Identidade Visual" value="Outro tipo de identidade visual" class="input-radio"  id="another_visual_identity">
+              <label for="another_visual_identity">Outro</label>
+            </div>
+          </div>
+          <h2> 14. Ainda tem algo a dizer? Fique à vontade para contribuir com outras informações.
+          </h2>
+          <div class="box-area-text ">
+            <textarea class="input-text-area" id="message" placeholder="Escreva sua mensagem" name="contribuir com outra informação"
+              required> </textarea>
+          </div>
+      </div>
+      <button id="button-send" type="submit">Enviar</button>
+    </div>
+    </form>
+    </div>
+    <div>
+      <img src="./assets/LOGO_DIGITECH.png" class="logo" alt="Logo">
+
+    </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
